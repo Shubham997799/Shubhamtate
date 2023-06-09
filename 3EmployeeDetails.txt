@@ -1,0 +1,46 @@
+// Enter 3 employee details and display
+
+package abbc;
+import java.util.*;
+class Employee
+{
+	private int eid;
+	private String ename,designation;
+	private float salary;
+	
+	void accept()
+	{
+		Scanner Sc = new Scanner (System.in);
+		System.out.println("Enter The Employee id :");
+		eid = Sc.nextInt();
+		System.out.println("Enter The Employee Name :");
+		ename = Sc.next();
+		System.out.println("Enter The Employee Designation :");
+		designation = Sc.next();
+		System.out.println("Enter The Employee Salary :");
+		salary = Sc.nextFloat();
+	}
+	
+	void display()
+	{
+		System.out.println(eid + " " + ename + " " + designation + " " + salary );
+	}
+}
+class 3EmployeeDetails
+{
+	public static void main(String[] args) 
+	{
+		Employee x = new Employee();
+		Employee y = new Employee ();
+		Employee z = new Employee ();
+		
+		x.accept();
+		y.accept();
+		z.accept();
+		
+		x.display();
+		y.display();
+		z.display();
+	}
+
+}
