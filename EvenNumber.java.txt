@@ -1,0 +1,30 @@
+package abbc;
+import java.util.*;
+ class EvenNumber 
+{
+
+	public static void main(String[] args) 
+	{
+		int i,n;
+		Scanner Sc = new Scanner(System.in);
+		System.out.println("Enter n:");
+		n= Sc.nextInt();
+		int a[]= new int[n];
+		System.out.println("Enter Elements");
+		for (i=0;i<n;i++)
+		{
+			a[i]=Sc.nextInt();
+		}
+		System.out.println("Display Even Elements");
+		for (i=0;i<n;i++);
+		{
+			if (a[i] % 2 == 0)
+			{
+				System.out.println(a[i]);
+			}
+		}
+		
+
+	}
+
+}

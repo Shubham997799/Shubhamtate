@@ -1,0 +1,55 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import Java.util.*;
+abstract ClassShape
+{
+    abstract void Area();
+}
+class Circle extends Shape
+{
+    final float pi=3.14f;
+    float r;
+    Circle (float p)     //constructor
+    {
+        r=p;
+    }
+    void area()
+    {
+        float a=pi*r*r;
+        System.out.println("Area of Circle:",+a);
+    }
+}
+class Triangle extends Shape
+{
+    float l,b;
+    Triangle (float p,float q)     //constructor
+    {
+        l=p;
+        b=q;
+    }
+    void area()
+    {
+        float a=0.5f*l*b;
+        System.out.println("Area of Triangle:",+a);
+    }
+}
+class AreaExample
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner (System.in);
+        float m,n;
+        System.out.println("Enter Radius");
+        m=sc.nextfloat();
+        Shape x = new Circle(m);
+        x.area();
+        System.out.println("Enter Length of triangle");
+        m=sc.nextfloat();
+        System.out.println("Enter Breadth of triangle");
+        n=sc.nextfloat();
+        Shape x = new Triangle(m,n);
+        x.area();
+    
+    }
+}
